@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatdando Theater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+    <h1> FLATDANGO THEATER</h1>
+    </header>
+
+    <aside id="menu">
+        <h2>Now Showing</h2>
+        <ul id="films">
+
+        </ul>
+
+    </aside>
+
+    <main>
+        <section id="movie-details">
+            <div id="movie-header">
+                <h2>Movie Details</h2>
+            </div>
+
+            <div id="movie-info">
+                <div class="movie-text">
+                    <div class="movie-meta">
+                        <span><i class="fas fa-clock"></i> <span id="runtime">0</span> min</span>
+                        <span><i class="fas fa-film"></i> <span id="showtime">Time</span></span>
+                        <span><i class="fas fa-ticket-alt"></i> <span id="tickets-available">0</span> tickets left</span>
+                    </div>
+
+                    <div class="rating">
+                        <span class="star"><i class="fas fa-star"></i></span>
+                        <span class="star"><i class="fas fa-star"></i></span>
+                        <span class="star"><i class="fas fa-star"></i></span>
+                        <span class="star"><i class="fas fa-star"></i></span>
+                        <span class="star"><i class="fas fa-star-half-alt"></i></span>
+                    </div>
+
+                    <div class="badges">
+                        <span class="badge">Featured</span>
+                    </div>
+
+                    <div class="movie-description"></div>
+                </div>
+            </div>
+
+            <div class="showtimes">
+                <h3> Select Showtime</h3>
+                <div class="time-slots">
+                    <div class="time-slot"> 12:00 PM</div>
+                    <div class="time-slot">3:00 PM</div>
+                    <div class="time-slot">7:00 PM</div>
+                    <div class="time-slot">9:00 PM</div>
+                </div>
+            </div>
+
+            <button id="ticket-purchase">
+                <i class="fas fa-ticket-alt"></i> Purchase Ticket
+            </button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

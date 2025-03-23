@@ -1,0 +1,291 @@
+ body{
+    background-image:url(assets/pexels-donaldtong94-109669.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+ }
+header h1{
+    color: white; 
+    font-size: 1.8rem;
+    margin: 0;
+ }
+ header{
+    width: 100vw;
+    background-color: black;
+    opacity: 0.6;
+    height: 100px;
+    text-align:center;
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+ }
+
+ main{
+    display: flex;
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: 250px;
+    min-height: calc(100vh - 80px);
+ }
+
+ #menu{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    top: 100;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 80px;
+    opacity: 0.6;
+ }
+
+ #menu h2{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: black;
+ }
+
+ #films{
+    list-style-type: none;
+    padding: 0;
+ }
+
+ #films .film.item{
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+ }
+
+ #films .film.item:hover{
+    background-color:rgba(255, 255, 255, 0.1) ;
+ }
+
+ #films .film.item.active{
+    background-color: rgba(0, 123, 255, 0.2);
+    border-left: 4px solid #007bff;
+ }
+
+ #films .film.item.sold-out {
+    color: #777;
+    text-decoration: line-through;
+    opacity: 0.7;
+ }
+
+
+ #movie-details{
+    background-color:white;
+    opacity: 0.6;
+    border-radius: 8px;
+    width: 70%;
+    max-width: 900px;
+    padding: 30px;
+    margin: 0 auto;
+    color: black;
+ }
+
+ #movie-details h2{
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    border-bottom: 2px solid cream;
+    padding-bottom: 10px;
+    color: black;
+ }
+
+ #movie-info{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+
+ .movie-text{
+    min-width: 300px;
+    flex: 1;
+ }
+
+ .movie-meta{
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color:black
+ }
+
+ .movie-meta span{
+    align-items: center;
+    display: flex;
+    margin-right: 15px;
+
+ }
+
+ .movie-meta i{
+    margin-right: 5px;
+    color: purple
+ }
+
+
+ .movie-description{
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+ }
+
+ #movie-info img{
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+
+ }
+
+ .showtimes{
+    margin-top: 30px;
+
+ }
+
+ .showtimes h3{
+    margin-bottom: 15px;
+    color: black;
+ }
+
+ .time-slots{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+ }
+
+
+ .time-slot{
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+ }
+
+ .time-slot:hover{
+    background-color: grey;
+ }
+
+ .time-slot.selected{
+    background-color: rgb(206, 206, 187);
+    color: black;
+ }
+
+
+ #ticket-purchase{
+    padding: 12px 25px;
+    background-color:rgb(182, 182, 182);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: center;
+    border: black;
+ }
+ #ticket-purchase:hover{
+    background-color: grey;
+ }
+
+
+ .rating{
+    display: inline-block;
+    margin-bottom: 15px;
+
+ }
+
+
+ .star{
+    color: gold;
+    margin-right: 2px;
+
+ }
+
+
+ .badge{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:grey;
+    color: black;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+ }
+
+ .new-release{
+    position: relative;
+    overflow: hidden;
+
+ }
+
+
+ .new-release::after{
+    content: 'NEW';
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    background-color:gray;
+    font-size: 0.7rem;
+    font-weight: bold;
+ }
+
+
+ @media(max-width:992px) {
+    #menu{
+        width: 200px;
+    }
+
+    main{
+        margin-left: 200px;
+    }
+    #movie-details{
+        width: 100%;
+    }
+ }
+
+ @media (max-width: 768px) {
+    #menu {
+        width: 0;
+        padding-top: 60px;
+    }
+    
+    #menu.open {
+        width: 250px;
+    }
+    
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+    
+    header {
+        padding: 10px 0;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 101;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+    
+ 
